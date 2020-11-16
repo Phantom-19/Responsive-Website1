@@ -1,0 +1,475 @@
+    @import url('https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    scroll-behavior: smooth;
+}
+p{
+    font-weight: 300;
+    color: #fff;
+}
+h1,h2,h3,h4,h5,h6{
+    color: #fff;
+    font-weight: 600;
+}
+/**** Ban - about section css ****/
+.ban{
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: url("https://raw.githubusercontent.com/Phantom-19/img/main/bg/trackip.png");
+    background-size: cover;
+    background-repeat:  no-repeat;
+}
+.ban .contenu{
+    max-width: 900px;
+    text-align: center;
+}
+.ban .contenu h2{
+    font-size: 5em;
+    color: #fff;
+}
+.ban .contenu p{
+    font-size: 1em;
+    color: #fff;
+}
+/*** Button btn section css ***/
+.btn{
+    font-size: 1em;
+    color: #fff;
+    background: #ee0808;
+    display: inline-block;
+    padding: 10px 30px;
+    margin-top: 20px;
+    text-transform: uppercase;
+    text-decoration: none;
+    letter-spacing: 2px;
+    transition: .5s;
+}
+.btn:hover{
+    letter-spacing: 6px;
+}
+/* body{min-width: 1000px;} */
+/***** Header + logo css *****/
+header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 40px 100px;
+    z-index: 10000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: .5s;
+}
+header .lg{
+    color: #fff;
+    font-weight: 700;
+    font-size: 2em;
+    text-decoration: none;
+}
+header .lg span{
+    color: #ea6535;
+}
+header .navs{
+    position: relative;
+    display: flex;
+}
+header .navs li{
+    list-style: none;
+    margin-left: 30px;
+}
+header .navs li a{
+    color: #fff;
+    text-decoration: none;
+    font-weight: 300;
+}
+header .navs li a:hover{
+    color: #ff0157;
+    border-radius: 5px;
+    box-shadow: 0 0 5px #33ffff,
+               0 0 10px #66ffff;
+}
+/******* Header + logo Sticky ***********/
+header.sticky{
+    background: #ff7f50;
+    padding: 10px 40px;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.05);
+}
+header.sticky .lg{
+    color: #f3040c;
+}
+header.sticky .lg span{
+    color: #ece8e7;
+}
+header.sticky .navs li a{
+    color: #000;
+}
+header.sticky .navs li a:hover{
+    border-radius: 5px;
+    box-shadow: 0 0 5px #121313,
+                0 0 10px #151919;
+}
+/***** Section global *****/
+section{
+    padding: 100px;
+ }
+/** About section css **/
+.about{
+    background-color: #333;
+}
+.abrow{
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+.abrow .c50{
+    position: relative;
+    width: 48%;
+}
+.ttxt{
+    color: #fff;
+    font-size: 2em;
+    font-weight: 300;
+}
+.ttxt span{
+    color: #ff0157;
+    font-weight: 700;
+    font-size: 1.5em;
+}
+.abrow .c50 .imgBx{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    /*min-height: 300px;*/
+}
+.abrow .c50 .imgBx img{
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+/** Menu section css **/
+.menu{
+    background-color: #333;color: #fff;
+}
+.titre{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.menu .contenu{
+    display: flex;
+    justify-content: center;
+    flex-direction:row-reverse;
+    flex-wrap: wrap;
+    margin-top: 40px;
+}
+.menu .contenu .Bx{
+    width: 340px;
+    margin: 20px;
+    border: 15px solid #fff;
+    box-shadow: 0 5px 35px rgba(0,0,0,0.08);
+}
+.menu .contenu .Bx .imgBx{
+    position: relative;
+    width: 100%;
+    height: 300px;
+}
+.menu .contenu .Bx .imgBx img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.menu .contenu .Bx .txt{
+    padding: 15px 0 5px;
+}
+.menu .contenu .Bx .txt h3{
+    font-weight: 900;
+    color: #fff;
+    text-align: center;
+}
+/****** Expert section css******/
+.expert{
+    background-color: #333;
+}
+.expert .contenu{
+    display: flex;
+    justify-content: center;
+    flex-direction:row;
+    flex-wrap: wrap;
+    margin-top: 40px;
+}
+.expert .contenu .Bx{
+    width: 250px;
+    margin: 15px;
+}
+.expert .contenu .Bx .imgBx{
+    position: relative;
+    width: 100%;
+    height: 300px;
+}
+.expert .contenu .Bx .imgBx img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.expert .contenu .Bx .txt{
+    padding: 15px 0 5px;
+}
+.expert .contenu .Bx .txt h3{
+    font-weight: 600;
+    color: #fff;
+    text-align: center;
+}
+/*** Testimonial section css ***/
+.testi {
+    background: url("https://raw.githubusercontent.com/Phantom-19/img/main/up/CEVv11.png");
+    background-size: cover;
+}
+.white .ttxt,
+.white p{
+    color: #fff;
+    font-weight: 600;
+}
+.testi .contenu{
+    display: flex;
+    justify-content: center;
+    flex-direction:row;
+    flex-wrap: wrap;
+    margin-top: 40px;
+}
+.testi .contenu .Bx {
+    width: 340px;
+    margin: 20px;
+    padding: 40px;
+    background-color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.testi .contenu .Bx .imgBx{
+    position: relative;
+    width: 80px;
+    height: 80px;
+    margin-bottom: 20px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+.testi .contenu .Bx .imgBx img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.testi .contenu .Bx .txt{
+    text-align: center;
+}
+.testi .contenu .Bx .txt p{
+    color: #000;
+    font-style: initial;
+}
+.testi .contenu .Bx .txt h3{
+    margin-top: 20px;
+    font-size: 1em;
+    color: #ff0157;
+    font-weight: 600;
+}
+/**** Contact Section css ****/
+.contact{
+    background: url("https://raw.githubusercontent.com/Phantom-19/img/main/up/CEH%202.png");
+    background-size: cover;
+}
+.form {
+    padding: 75px 50px;
+    background: #372525;
+    box-shadow: 0 15px 50px rgba(0,0,0,0.1);
+    max-width: 500px;
+    margin-top: 50px;
+}
+.form h3{
+    color: #fff;
+    font-size: 2rem;
+    margin-bottom: 20px;
+    font-weight: 900;
+    text-align: center;
+}
+.form .inputBx{
+    position: relative;
+    width: 100%;
+    margin-bottom: 20px;
+}
+.form .inputBx input,
+.form .inputBx textarea{
+    width: 100%;
+    border: 1px solid #00ff00;
+    padding: 10px;
+    color: #111;
+    outline: none;
+    font-size: 16px;
+    font-weight: 300;
+    resize: none;
+}
+.form .inputBx input{
+    border-radius: 50px;
+}
+.form .inputBx textarea{
+    border-radius: 20px;
+    text-align: center;
+}
+.form .inputBx input[type="submit"]{
+    font-size: 1rem;
+    color: #000;
+    background: #ff0157;
+    display: inline-block;
+    text-transform: uppercase;
+    text-decoration: none;
+    letter-spacing: 2px;
+    transition:.5s;
+    border: 3px solid #000;
+    border-radius: 50px;
+    font-weight: 900;
+    max-width: 150px;
+    cursor: pointer;
+}
+.form .inputBx input[type="submit"]:hover{
+    background: #37ff00;
+}
+/**** Copyright section css ****/
+.copyr{
+    padding: 8px 40px;
+    border-top: 1px solid rgba(0,0,0,0.1);
+    text-align: center;
+    background: #2b2121;
+}
+.copyr p{
+    color: #fff;
+}
+.copyr a{
+    color: #ff0157;
+    font-weight: 900;
+    text-decoration: none;
+}
+/********************************************/
+         /* Responsive css*/
+@media (max-width:991px){
+    header,header.sticky{
+        padding: 10px 20px;
+    }
+    header .navs{
+        display: none;
+    }
+    header .navs.active{
+        width: 100%;
+        height: calc(100% - 68px);
+        position: fixed;
+        top: 68px;
+        left: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        background: coral;
+    }
+    header .navs li{
+        margin-left: 0;
+    }
+    header .navs li a{
+        color: #111;
+        font-weight: 300;
+        text-decoration: none;
+        font-size: 1.5rem;
+    }
+    header .navs li a:hover{
+        color: #01ff12;
+        border-radius: 5px;
+        box-shadow: 0 0 5px #33ffff,
+                    0 0 10px #66ffff;
+    }
+    section{
+        padding: 20px;
+    }
+    .bar{
+        position: relative;
+        width: 40px;
+        height: 40px;
+        background: url("https://raw.githubusercontent.com/Phantom-19/img/main/icon/m.png") no-repeat center;
+        background-size: 30px;
+        cursor: pointer;
+    }
+    .bar.active{
+        background: url("https://raw.githubusercontent.com/Phantom-19/img/main/icon/cl.png") no-repeat center;
+        background-size: 25px;
+    }
+    header.sticky .bar{
+        filter: invert(1);
+    }
+    .ban .contenu h2{
+        font-size: 3rem;
+        color: #fff;
+    }
+    .row{
+       flex-direction: column;
+    }
+    .row .c50{
+        position: relative;
+        width: 100%;
+    }
+    .row .c50 .imgBx {
+        height: 300px;
+        margin-top: 20px;
+    }
+    .menu .contenu{
+        margin-top: 20px;
+    }
+    .menu .contenu .Bx{
+        margin: 10px;
+    }
+    .menu .contenu .Bx .imgBx{
+        height: 260px;
+    }
+    .titre{
+        text-align: center;
+    }
+    .ttxt{
+        font-size: 1.8em;
+        line-height: 1.5em;
+        margin-bottom: 15px;
+        font-weight: 300;
+    }
+    .testi .contenu .Bx {
+        margin: 10px;
+        padding: 20px;
+    }
+    .form {
+        padding: 35px 40px;
+        margin-top: 20px;
+        margin-bottom: 30px;
+    }
+}
+@media  (max-width:480px){
+    .ban .contenu h2{
+        font-size: 2.2em;
+        color: #fff;
+    }
+}
